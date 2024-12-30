@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+[data-tab-content] {
+  display: none;
+}
+.active[data-tab-content] {
+  display: block;
+}
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  border-bottom: 2px solid #000;
+  cursor: pointer;
+}
+.tab {
+  padding: 1rem;
+}
+.tab:hover {
+  background-color: #333;
+}
+.tab.active {
+  background-color: #888;
+}
